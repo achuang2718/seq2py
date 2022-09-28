@@ -1,0 +1,65 @@
+address,analog,logical_id,descriptor,comment,labscriptChlName,default_value,shutter,shutter_open_delay,shutter_close_delay,open_state,dev,port,line,category
+/Dev3/port0/line0,FALSE,0,K all slower field,"MOSFET gate, slower coils",k_slower_field,,FALSE,,,,3,0,0,B-field
+/Dev3/port0/line1,FALSE,1,LiNa slower field,"MOSFET gate, slower coils",na_slower_field,,FALSE,,,,3,0,1,B-field
+/Dev3/port0/line2,FALSE,2,"RF1 fast switch ","go_low to dump RFK1 seed signal to amplifier, see RF path diagram",rf1_fast_switch,,FALSE,,,,3,0,2,rf
+/Dev3/port0/line3,FALSE,3,"Keithley Ext Trigger ",???,keithley_ext_trigger,,FALSE,,,,3,0,3,???
+/Dev3/port0/line4,FALSE,4,"By on ","??? MOSFET gate, compensation coil",by_on,,FALSE,,,,3,0,4,B-field
+/Dev3/port0/line5,FALSE,5,Na Y img shutter,see Na optical path drawing,na_y_img_shutter,,TRUE,6.00E-03,,1,3,0,5,Na optics
+/Dev3/port0/line6,FALSE,6,"K atom shutter ",,k_atom_shutter,,TRUE,,,,3,0,6,mechanical
+/Dev3/port0/line7,FALSE,7,"**Na F=2 Img AOM TTL ",,na_f2_img_aom_ttl,,FALSE,,,,3,0,7,Na optics
+/Dev3/port1/line0,FALSE,8,"X bias On ","??? MOSFET gate, compensation coil",x_bias_on,1,FALSE,,,,3,1,0,B-field
+/Dev3/port1/line1,FALSE,9,"top MOT flipper ",flips a mirror between MOT loading and z-imaging,top_mot_flipper,1,FALSE,,,,3,1,1,mechanical
+/Dev3/port1/line2,FALSE,10,"IPG ",switch of shutter AOM,ipg,,FALSE,,,,3,1,2,IR optics
+/Dev3/port1/line3,FALSE,11,"ZCam Trigger ",Andor camera trigger,z_cam_trigger,,FALSE,,,,3,1,3,camera
+/Dev3/port1/line4,FALSE,12,"K slower shutter ",??? needs drawing,k_slower_shutter,,TRUE,,,,3,1,4,K optics
+/Dev3/port1/line5,FALSE,13,"MW RS upleg ",currently used for K microwave cleanout,microwave_rs_upleg,,FALSE,,,,3,1,5,rf
+/Dev3/port1/line6,FALSE,14,"y - high field imaging flipper ",??? no high-field y imaging implemented now,y_high_field_imaging_flipper,,FALSE,,,,3,1,6,???
+/Dev3/port1/line7,FALSE,15,K Tandem AOM switch,??? needs drawing,k_tandem_aom_switch,,FALSE,,,,3,1,7,K optics
+/Dev4/port0/line0,FALSE,17,"K high img AOM switch ",??? needs drawing,k_high_img_aom_switch,1,FALSE,,,,4,0,0,K optics
+/Dev4/port0/line1,FALSE,18,"**Na MOT TTL ",gates rf power to shutter AOM,na_mot_ttl,,FALSE,,,,4,0,1,Na optics
+/Dev4/port0/line2,FALSE,19,"**Na Repump TTL ",gates rf power to shutter AOM,na_repump_ttl,,FALSE,,,,4,0,2,Na optics
+/Dev4/port0/line3,FALSE,20,"z-cam shutter ",uniblitz shutter,zcam_shutter,,TRUE,,,,4,0,3,camera
+/Dev4/port0/line4,FALSE,21,microwave_amplifier_24VDC_power,for 1.7GHz 10W amplifier,microwave_amplifier_24VDC_power,,FALSE,,,,4,0,4,rf
+/Dev4/port0/line5,FALSE,22,"RF1 & RF2 amp TTL ","24, 30V power for RFK1, RFK2 amplifiers",rf1_rf2_amplifier_dc_power,,FALSE,,,,4,0,5,rf
+/Dev4/port0/line6,FALSE,23,"SG TTL ","likely some MOSFET, not actively stabilized",sg_ttl,,FALSE,,,,4,0,6,B-field
+/Dev4/port0/line7,FALSE,24,"scope trigger ",,scope_trigger,,FALSE,,,,4,0,7,misc
+/Dev4/port1/line0,FALSE,25,"**Na Repumper Shutter ",see Na optical path drawing,na_repumper_shutter,1,TRUE,,,,4,1,0,Na optics
+/Dev4/port1/line4,FALSE,26,"K imaging Z shut ",??? needs drawing,k_imaging_z_shutter,,TRUE,,,,4,1,4,K optics
+/Dev4/port3/line0,FALSE,27,"**Na slower shutter/AOM/EOM ",??? **Na slower Shutter [CLARIFY],mystery_na_slower_shutter_aom_eom,,TRUE,,,,4,3,0,Na optics
+/Dev4/port3/line2,FALSE,29,"K imagingY shutter ",??? needs drawing,k_imaging_y_shutter,,TRUE,6.00E-03,,1,4,3,2,K optics
+/Dev4/port3/line3,FALSE,30,"K40 MOT Shutter ",directly in front of K MOT fiber to experiment,k40_mot_shutter,,TRUE,7.00E-03,,1,4,3,3,K optics
+/Dev4/port2/line0,FALSE,31,"K40 Repump Shutter ",??? part of MOT/repump TA setup,k40_repump_shutter,,TRUE,8.00E-03,,1,4,2,0,K optics
+/Dev4/port3/line4,FALSE,32,"plug shutter ",on experiment table,plug_shutter,1,TRUE,,,,4,3,4,plug
+/Dev4/port3/line7,FALSE,33,"Ti:Sa shutter ",??? needs drawing,tisa_shutter,,TRUE,,,,4,3,7,TiSa
+/Dev3/port2/line0,FALSE,34,"**Na MOT Shutter ",see Na optical path drawing,na_mot_shutter,,TRUE,,,,3,2,0,Na optics
+/Dev3/port2/line1,FALSE,35,"Ti:Sa AOM TTL ",gates TiSa to experiment,tisa_aom_ttl,,FALSE,,,,3,2,1,TiSa
+/Dev3/port2/line2,FALSE,36,"Bz On ","??? MOSFET gate, compensation coil",bz_on_digital,1,FALSE,,,,3,2,2,B-field
+/Dev3/port2/line3,FALSE,37,"YCam Ttrigger ",Andor camera trigger,y_cam_trigger,,FALSE,,,,3,2,3,camera
+/Dev3/port2/line4,FALSE,38,"**Na F=1 Img AOM TTL ",see Na path drawing,na_f1_img_aom_ttl,,FALSE,,,,3,2,4,Na optics
+/Dev3/port2/line5,FALSE,39,"RF2 fast switch ",??? match logical channel idx on rf path diagram,rf2_fast_switch,,FALSE,,,,3,2,5,rf
+/Dev3/port2/line6,FALSE,40,"HV on off ",???,hv_on_off,,FALSE,,,,3,2,6,unused
+/Dev3/port2/line7,FALSE,41,FB lock ON,goes to lock box,fb_lock,,FALSE,,,,3,2,7,B-field
+/Dev3/port3/line0,FALSE,42,Na Z imaging shutter,"  **Na imaging1 shutter",na_z_imaging_shutter,,TRUE,6.00E-03,,1,3,3,0,Na optics
+/Dev3/port3/line1,FALSE,43,"**Na Brimrose Shutter ",,na_brimrose_shutter,1,TRUE,5.00E-02,,1,3,3,1,Na optics
+/Dev3/port3/line2,FALSE,44,"RF1 fast switch (new) ",go_low to dump the seed from the NI PXI-5652 rf card to the 1.7GHz amplifier,rf1_fast_switch_new,,FALSE,,,,3,3,2,rf
+/Dev3/port3/line3,FALSE,45,"MW LX! downleg ",??? not in use currently?,microwave_lxi_downleg,,FALSE,,,,3,3,3,rf
+/Dev3/port3/line4,FALSE,46,"Na atom shutter ",,na_atom_shutter,,TRUE,,,,3,3,4,mechanical
+/Dev3/port3/line5,FALSE,47,"IR envelope trigger ",TiSa amplitude control,ir_envelope_trigger,,FALSE,,,,3,3,5,IR optics
+/Dev3/port3/line6,FALSE,48,"FB agilent triqger ",FB field amplitude control,fb_agilent_triqger,,FALSE,,,,3,3,6,B-field
+/Dev3/port3/line7,FALSE,49,"TiSa dither off ",external control of TiSa driver box,tisa_dither_off,,FALSE,,,,3,3,7,TiSa
+/Dev4/port1/line1,FALSE,50,"Hyperfine agi 2 ",??? not on rf path diagram,hyperfine_agilent_2,,FALSE,,,,4,1,1,
+/Dev4/port1/line2,FALSE,51,"MW (on)/RF(off) swtich TTL ","relay to antenna, go_low to connect RFK1/RFK2, go_high for 1.7GHz",microwave_to_rf_relay,,FALSE,,,,4,1,2,rf
+/Dev4/port1/line3,FALSE,52,"Dye laser shutter ",??? needs drawing,dye_laser_shutter,,TRUE,,,,4,1,3,dye laser
+/Dev4/port1/line5,FALSE,53,"Dye laser AOM TTL ",??? needs drawing,dye_laser_aom_ttl,,FALSE,,,,4,1,5,dye laser
+/Dev4/port1/line6,FALSE,54,"IGBT MagTrap TTL ",??? are IGBT MagTrap TTL and MagTrap Relay related?,igbt_mag_trap_ttl,,FALSE,,,,4,1,6,B-field
+/Dev4/port1/line7,FALSE,55,"MagTrap Relay ",mechanical switch,mag_trap_relay,1,FALSE,,,,4,1,7,B-field
+/Dev4/port2/line1,FALSE,56,"IGBT FB TTL ",,igbt_fb_ttl,,FALSE,,,,4,2,1,B-field
+/Dev4/port2/line2,FALSE,57,"FB coils Relay ",mechanical switch,fb_coils_relay,,FALSE,,,,4,2,2,B-field
+/Dev4/port2/line3,FALSE,58,"K40 high field img ","toggle to transmit 0th order of double-pass AOM ",k40_high_field_img,,FALSE,,,,4,2,3,K optics
+/Dev4/port2/line4,FALSE,59,"IGBT MOT TTL ","was IGBT curvature TTL ",igbt_mot_ttl,,FALSE,,,,4,2,4,B-field
+/Dev4/port2/line5,FALSE,60,PODT,???,podt,,FALSE,,,,4,2,5,IR optics
+/Dev4/port2/line6,FALSE,61,PODT AOM,???,podt_aom,,FALSE,,,,4,2,6,IR optics
+/Dev4/port2/line7,FALSE,62,"RF1 (TTL low) / RF2 (TTL high) ","go_low for RFK1, go_high for RFK2",rf1_to_rf2_relay,,FALSE,,,,4,2,7,rf
+/Dev4/port3/line1,FALSE,63,"**Na Tandem TTL ",gates rf power,na_tandem_ttl,,FALSE,,,,4,3,1,Na optics
+/Dev4/port3/line5,FALSE,64,"K40 SlowMOT ","gates +80MHz double pass (shutter) AOM ",k40_slower_mot,,FALSE,,,,4,3,5,K optics
+/Dev4/port3/line6,FALSE,65,"K40 SlowRepump ",gates -80MHz double pass (shutter) AOM,k40_slower_repump,,FALSE,,,,4,3,6,K optics

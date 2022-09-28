@@ -1,0 +1,47 @@
+address,analog,logical_id,descriptor,comment,labscriptChlName,default_value,dev,ao,category
+/Dev1/ao0,TRUE,0,"MagTrap ",??? external modulation of magtrap current supply,mag_trap,-0.1,1,0,B-field
+/Dev1/ao1,TRUE,1,"K TandemPower ",??? needs drawing,k_tandem_power,1,1,1,K optics
+/Dev1/ao7,TRUE,2,"K TandemFreq ",??? needs drawing,k_tandem_freq,7.48,1,7,K optics
+/Dev1/ao6,TRUE,3,"Atom Shutter Ctr ",mechanical position of shutter,atom_shutter_ctrl,0,1,6,"mechanical "
+/Dev1/ao2,TRUE,4,"** NA MOT Freq ","+1 order, double pass AOM frequency",na_mot_freq,0.45,1,2,Na optics
+/Dev1/ao3,TRUE,5,"40K slowerMOT Pow ",+80MHz double pass AOM,k40_slower_mot_power,3,1,3,K optics
+/Dev1/ao4,TRUE,6,"40K slowerRep Pow ",-80MHz double pass AOM,k40_slower_rep_power,3,1,4,K optics
+/Dev2/ao7,TRUE,7,"TiSaSlowPzt ",??? internal piezo in TiSa cavity,tisa_slow_pzt,6.2,2,7,TiSa
+/Dev5/ao0,TRUE,17,"K41 MOTSlowerPow ",??? unused?,k41_mot_slower_power,4,5,0,K optics
+/Dev2/ao6,TRUE,9,"K2 switch btw low and high field RF ",??? is this deprecated and implemented on a digital channel?,k2switchbtwlowandhighfield_rf,4.5,2,6,rf
+/Dev1/ao5,TRUE,10,"K40 Repumper Freq ",-320MHz double pass AOM,k40_repumper_freq,5.25,1,5,K optics
+/Dev2/ao1,TRUE,11,"K40 SlowerMOTFreq ",+80MHz double pass AOM,k40_slower_mot_freq,3,2,1,K optics
+/Dev2/ao2,TRUE,12,"K40 SlowerRepFreq ",-80MHz double pass AOM,k40_slower_rep_freq,3.2,2,2,K optics
+/Dev2/ao3,TRUE,13,"By Off ",bias coils,by_off,1.2,2,3,B-field
+/Dev2/ao4,TRUE,14,"Bx On ",bias coils,bx_on,0,2,4,B-field
+/Dev2/ao5,TRUE,15,"Bz On ",bias coils,bz_on,0.7,2,5,B-field
+/Dev2/ao0,TRUE,16,"K40 MOT Frequency ",??? +290MHz double pass AOM,k40_mot_frequency,7.25,2,0,K optics
+/Dev5/ao1,TRUE,18,"** Na Repumper Freq ","+1 order AOM, after Brimrose",na_repumper_freq,0,5,1,Na optics
+/Dev5/ao2,TRUE,19,"K high field AOM power ",??? needs drawing,k_high_field_aom_power,4,5,2,K optics
+/Dev5/ao3,TRUE,20,"K41 MOTFreq ",??? deprecated,k41_mot_freq,6.0364,5,3,K optics
+/Dev5/ao4,TRUE,21,"K41 RepumpFreq ",???,k41_repump_freq,2.1012,5,4,K optics
+/Dev5/ao5,TRUE,22,"FBCV ",??? [PERMANENTLY OVERRIDDEN],fb_cv,-2.4,5,5,???
+/Dev5/ao6,TRUE,23,"Li Tandem Freq ",???,li_tandem_freq,0,5,6,???
+/Dev5/ao7,TRUE,24,"MOT fluo trig level ",??? was Li Tandem Pow [DEPRECATED?],mot_fluo_trig_level,3.5,5,7,???
+/Dev6/ao0,TRUE,25,"unused ",,unused,0,6,0,???
+/Dev6/ao1,TRUE,26,"By Coil ",??? by_on - By_on/off convention,by_coil,0,6,1,B-field
+/Dev6/ao2,TRUE,27,"HV top control ","was Li Repump Pow ",hv_top_control,2.8,6,2,???
+/Dev6/ao3,TRUE,28,"HV bottom control ","was Li lockin ",hv_bottom_control,4.6,6,3,???
+/Dev6/ao4,TRUE,29,"Freq sweep for MW/Agilent ",analog frequency modulation,agilent_mxg_fm,5.9,6,4,rf
+/Dev6/ao5,TRUE,30,SG IGBT TTLtemp,??? check the sequence,sg_igbt_ttl,0,6,5,???
+/Dev6/ao6,TRUE,31,"By grad IGBT TTL temp ",???,by_grad_igbt_ttl,0,6,6,???
+/Dev6/ao7,TRUE,32,"MOT coil ",??? external modulation of MOT current supply,mot_coil,-0.1,6,7,B-field
+/Dev7/ao0,TRUE,33,"K40 Repumper TA power ",external amplitude modulation of Thorlabs current driver,k40_repumper_ta_power,7,7,0,K optics
+/Dev7/ao1,TRUE,34,"K40 MOT TA power ",external amplitude modulation of Thorlabs current driver,k40_mot_ta_power,6,7,1,K optics
+/Dev7/ao2,TRUE,35,"Na F=2 Img AOM Freq ",see Na optical path drawing,na_f2_img_aom_freq,,7,2,Na optics
+/Dev7/ao3,TRUE,36,"Na F=1 Img AOM Pow ",see Na optical path drawing,na_f1_img_aom_pow,,7,3,Na optics
+/Dev7/ao4,TRUE,37,"Na Tandem Freq ",see Na optical path drawing,na_tandem_freq,6.45,7,4,Na optics
+/Dev7/ao5,TRUE,38,"Na F=2 ImPow ",see Na optical path drawing,na_f2_im_pow,,7,5,Na optics
+/Dev7/ao6,TRUE,39,"Na MOT AOM Pow ",see Na optical path drawing,na_mot_aom_pow,,7,6,Na optics
+/Dev7/ao7,TRUE,40,"Na Repump AOM Pow ",see Na optical path drawing,na_repump_aom_pow,3.5,7,7,Na optics
+/Dev8/ao0,TRUE,41,"TiSa AOM power ",??? deprecated,tisa_aom_power,,8,0,TiSa
+/Dev8/ao1,TRUE,42,"CODT 16 bit ",amplitude control PID setpoint,codt_16bit,0,8,1,IR optics
+/Dev8/ao6,TRUE,43,"TiSa AOM Freq ",??? deprecated,tisa_aom_freq,,8,6,TiSa
+/Dev8/ao2,TRUE,44,"Dye Laser Freq ",??? depreacted,dye_laser_freq,,8,2,dye laser
+/Dev8/ao3,TRUE,45,SG grad,external amplitude modulation,sg_gradient,,8,3,B-field
+/Dev8/ao5,TRUE,47,"PODT 16 bit ",amplitude control PID setpoint,podt_16bit,0,8,5,IR optics
