@@ -48,6 +48,15 @@ def print_analog_group(word):
                     y_dict, preamble='yValue: ')
                 my_list.append(
                     (x_dict['ParameterString'], y_dict['ParameterString']))
+            analog_waveform_tuples.append((analog_output_idx, tuple(my_list)))
+
+        elif len(analog_output['waveform']['ExtraParameters']) > 1:
+            print('ExtraParameters found.')
+            my_list = [item['ParameterString']
+                       for item in analog_output['waveform']['ExtraParameters']]
+            derived_bool = False
+            if any(item['parameter']['var'] != None for item in analog_output['waveform']['ExtraParameters']):
+                derived_bool = True
 
             analog_waveform_tuples.append((analog_output_idx, tuple(my_list)))
 
@@ -140,7 +149,7 @@ def generate_digital_code(digital_dict, chl_names):
                 f.write(f'raise ValueError(\'Channel {name} has a pulse.\')\n')
 
 
-filename = r'temp\2022-09-28 zcam polaron.yaml'
+filename = r'temp\2022-09-28 Polaron STIRAP 830nm T3 TwoPhotonReosnance scan upleg shape factor 0p5.yaml'
 my_list = yaml_to_list(filename)
 df_analog = pd.read_csv(
     r'C:\Users\alexc\labscript-suite\userlib\labscriptlib\fermi1_apparatus\ciceroSettings\NI_analog_chls.csv')
