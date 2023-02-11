@@ -10,5 +10,3 @@ First .seq files must be converted to (human-readable) .yaml via the functionali
 
 ## Dependencies
 See `requirements.txt` and `environments.yml`. Also requires .csv files mapping Cicero channel indices to labscript analog/digital outputs (see e.g. `exampleFiles/channelSettings`).
-
-## Extra Line
